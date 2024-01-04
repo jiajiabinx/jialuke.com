@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Beige */
+        }
+        .header {
+            font-family: 'Great Vibes', cursive;
+            color: #7B679A;
+            text-align: center;
+            margin: 0;
+            position: relative;
+        }
+        .hamburger {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #4A6732;
+            font-size: 30px;
+            cursor: pointer;
+            text-align: right;
+            padding: 10px;
+        }
+        .nav {
+            display: none;
+            /* background-color: #9db68c; /* Sage green */
+            padding-top: 10px;
+            top: 0;
+            right:0;
+
+        }
+        .nav a {
+            color: #4A6732;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+            text-align: right;
+        }
+        .nav a:hover {
+            color: #9db68c; /* Beige */
+            transition: color 0.3s;
+        }
+        @media screen and (max-width: 600px) {
+            .hamburger {
+                display: block;
+            }
+            .nav a {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Jia and Luke</h1>
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+    </div>
+    <div class="nav" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="suzhou.html">Suzhou</a>
+        <a href="desmoines.html">Des Moines</a>
+        <a href="registry.html">Registry</a>
+        <a href="rsvp.html">RSVP</a>
+    </div>
+    <div class="content">
+
+        <!-- Embed your game here -->
+    </div>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navLinks");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

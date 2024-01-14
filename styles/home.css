@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    padding:0%;
+    margin: 0%;
+    margin-top: 0%;
+    background-color: #f5f5dc;
+}
+.main {
+    background-color: #f5f5dc; /* Beige */
+    height: 100%;
+    width: 100%;
+}
+
+.suzhou {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    z-index: 1;
+
+}
+.header {
+    font-family: 'Zeyada';
+    color: #f88379;
+    font-size: x-large;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1001;
+}
+.header-primary {
+    font-family: 'Poppins';
+    color: #FE0000;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1001;
+}
+.header-prmary-chinese {
+    font-family: 'Poppins';
+    color: #FE0000;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1001;
+    letter-spacing: 36px;
+}
+.header-secondary {
+    font-family: 'Poppins';
+    color: #FE0000;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    z-index: 1001;
+}
+.hamburger {
+    position: fixed;
+    top: 3.5vh;
+    right: 9px;
+    color: #4A6732;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px;
+    z-index: 1001;
+}
+.nav {
+    display: none;
+    position: fixed;
+    padding-top: 12vh;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+}
+.nav a {
+    color: #4A6732;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+    text-align: right;
+}
+.nav a:hover {
+    color: #9db68c; /* Beige */
+    transition: color 0.3s;
+}
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    .nav a {
+        display: none;
+    }
+}
